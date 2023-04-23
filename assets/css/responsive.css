@@ -507,4 +507,9 @@
   .home-padding {
     padding: 60px 0; } }
 
+    @media screen and (max-width: 600px) {
+      .resumedownload {
+        text-align: center;
+      }
+    }
 /*# sourceMappingURL=responsive.css.map */
