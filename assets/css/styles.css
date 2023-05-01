@@ -3535,3 +3535,47 @@ BLOG Pagination
 
 
 /*# sourceMappingURL=styles.css.map */
+
+.specialBorder {
+  position: relative;
+  padding: 15px 20px;
+}
+
+.specialBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px; 
+  border: 5px solid transparent;
+  background: linear-gradient(45deg,purple,rgb(0, 255, 234)) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.specialBorder1 {
+  position: relative;
+  padding: 15px 20px;
+}
+
+.specialBorder1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px; 
+  border: 5px solid transparent;
+  background: linear-gradient(45deg,rgb(236, 19, 55),rgb(255, 102, 0)) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}

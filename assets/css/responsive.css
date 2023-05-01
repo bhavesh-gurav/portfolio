@@ -512,4 +512,23 @@
         text-align: center;
       }
     }
+
+    @media screen and (max-width: 600px) {
+      .specialBorder1 {
+        position: relative;
+        padding: 15px 20px;
+      }
+
+      .specialBorder1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50px; 
+        border: 0px solid transparent;
+        mask-composite: exclude;
+      }
+    }
 /*# sourceMappingURL=responsive.css.map */
